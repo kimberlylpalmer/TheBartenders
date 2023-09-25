@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", () { })  //first event
     //3. Click - Whatever is selected from drop down menu, after a "click" will display name, image, description
     //4. Keypress Event - create like button spacebar press event
     //5. Submit - create comment form, add comment below the instructions
+    //6. Language Menu
+    //7. Add comments to API persistently
     
     
     //fetch request here
