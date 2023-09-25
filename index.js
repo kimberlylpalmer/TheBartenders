@@ -1,3 +1,5 @@
+const commentForm = document.querySelector('#comment-form')
+const commentValue = document.querySelector('#comment-input')
 //Landon
 
 
@@ -10,16 +12,12 @@
 
 //Kimberly
 
-document.addEventListener("DOMContentLoaded", () => {
-    const commentForm = document.querySelector('#comment-form')
-    commentForm.addEventListener('submit', (event) => {event.preventDefault()
-        const commentValue = document.querySelector('#comment-input')
-        console.log(commentValue.value)
-        buildComment(commentValue.value)
-        console.log(event.target.id)
-        commentForm.reset()
-    })
+
+commentForm.addEventListener('submit', (event) => {event.preventDefault()
+    buildComment(commentValue.value)
+    commentForm.reset()
 })
+
 
 function buildComment (comment) {
     let li = document.createElement('li');
