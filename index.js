@@ -1,18 +1,20 @@
 //Global variables
 const URL = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita'
-
+const margaritaDropDown = document.querySelector('#margarita-dropdown')
 //Landon
 const start = () => {
     fetch(URL)
         .then(response => response.json())
-        .then(data => dropMenue(data))
+        .then(data => data.drinks.forEach(margarita => dropMenue(margarita)))
         .catch(error => alert(error))
 }
-
 const dropMenue = (margarita) => {
-    console.log(margarita)
+  
+    const option = document.createElement('option')
+    option.textContent = margarita.strDrink
+    margaritaDropDown.append(option)
 }
-
+start()
 //Michel
 
 
