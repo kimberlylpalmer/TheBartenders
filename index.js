@@ -12,7 +12,7 @@
 document.addEventListener("DOMContentLoaded", () { })  //first event
 
 //Project Assignments List
-    //1. DOMContentLoaded - Page Loads and picture pops up
+    //1. DOMContentLoaded - Page Loads and picture pops up - Doesn't count as an eventListener
     //2. MouseOver - Button will be in the heading that will open the drop down menu of
     //3. Click - Whatever is selected from drop down menu, after a "click" will display name, image, description
     //4. Keypress Event - create like button spacebar press event
