@@ -6,9 +6,12 @@ const start = () => {
     fetch(URL)
         .then(response => response.json())
         .then(data => dropMenue(data))
+        .catch(error => alert(error))
 }
 
-
+const dropMenue = (margarita) => {
+    console.log(margarita)
+}
 
 //Michel
 
