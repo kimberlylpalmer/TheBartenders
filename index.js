@@ -1,5 +1,12 @@
-//Landon
+//Global variables
+const URL = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita'
 
+//Landon
+const start = () => {
+    fetch(URL)
+        .then(response => response.json())
+        .then(data => dropMenue(data))
+}
 
 
 
@@ -9,7 +16,7 @@
 
 
 //Kimberly
-document.addEventListener("DOMContentLoaded", () { })  //first event
+//document.addEventListener("DOMContentLoaded", () { })  //first event
 
 //Project Assignments List
     //1. DOMContentLoaded - Page Loads and picture pops up
