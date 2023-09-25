@@ -9,7 +9,23 @@
 
 
 //Kimberly
-document.addEventListener("DOMContentLoaded", () { })  //first event
+
+document.addEventListener("DOMContentLoaded", () => {
+    const commentForm = document.querySelector('#comment-form')
+    commentForm.addEventListener('submit', (event) => {event.preventDefault()
+        const commentValue = document.querySelector('#comment-input')
+        console.log(commentValue.value)
+        buildComment(commentValue.value)
+        console.log(event.target.id)
+        commentForm.reset()
+    })
+})
+
+function buildComment (comment) {
+    let li = document.createElement('li');
+    li.textContent = (`${comment}`)
+    document.querySelector('#comment-list').append(li)
+  }
 
 //Project Assignments List
     //1. DOMContentLoaded - Page Loads and picture pops up - Doesn't count as an eventListener
