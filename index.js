@@ -32,8 +32,6 @@ const drinkList = (drink) => {
   const li = document.createElement("li");
   li.textContent = drink.strDrink;
   listDrinks.appendChild(li);
-
-  // Add a click event listener to the drink item
   li.addEventListener('click', () => {
     displayIngredients(drink);
   });
