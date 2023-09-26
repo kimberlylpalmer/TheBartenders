@@ -33,7 +33,6 @@ function handleCocktailSelection() {
 
 margaritaDropDown.addEventListener('change', handleCocktailSelection);
 
-// Function to display ingredients
 const displayIngredients = (cocktail) => {
   ingredientsList.innerHTML = '';
 
