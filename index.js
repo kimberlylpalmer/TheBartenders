@@ -1,3 +1,4 @@
+
 //Global variables
 const URL = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
 const listDrinks = document.querySelector("#drink-list");
@@ -33,7 +34,43 @@ const drinkList = (drink) => {
 // start()
 //Michel
 
-//Kimberly
+
+const displayIngredients = (cocktail) => {
+  ingredientsList.innerHTML = '';
+
+  for (let i = 1; i <= 15; i++) {
+    const ingredient = cocktail[`strIngredient${i}`];
+    const measure = cocktail[`strMeasure${i}`];
+
+    if (ingredient) {
+      const li = document.createElement('li');
+      li.textContent = `${measure ? measure + ' ' : ''}${ingredient}`;
+      ingredientsList.appendChild(li);
+    } else {
+      break;
+    }
+  }
+};
+
+// Kimberly
+document.addEventListener('DOMContentLoaded', () => {
+  const commentForm = document.querySelector('#comment-form');
+  commentForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const commentValue = document.querySelector('#comment-input');
+    buildComment(commentValue.value);
+    commentForm.reset();
+  });
+
+  function buildComment(comment) {
+    let li = document.createElement('li');
+    li.textContent = `${comment}`;
+    document.querySelector('#comment-list').append(li);
+  }
+});
+
+start();
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const commentForm = document.querySelector("#comment-form");
@@ -52,6 +89,7 @@ function buildComment(comment) {
   li.textContent = `${comment}`;
   document.querySelector("#comment-list").append(li);
 }
+
 
 //document.addEventListener("DOMContentLoaded", () { })  //first event
 
