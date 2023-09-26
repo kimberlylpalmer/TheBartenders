@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <title>Cocktail Menu</title>
     <!-- You can link your CSS file here for styling -->
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
         <h1>MARGARITAS :D</h1>
     </header>
 
-
-        <section id="margarita-selector">
-            <label for="cocktail-dropdown">Select a Margarita:</label>
-            <select id="margarita-dropdown">
-              
-                <option value="cocktail1">Cocktail 1</option>
-                <option value="cocktail2">Cocktail 2</option>
-                <option value="cocktail3">Cocktail 3</option>
+    <main>
+        <section id="cocktail-selector">
+            <form id="drink-search">
+                <input type="text" placeholder="Cocktail.." name="search">
+                <button type="submit" id="search-button"></button>
+            </form>
+            <ul id="drink-list">
+            </ul>
                 <!-- Add more cocktail options here -->
             </select>
         </section>
@@ -56,8 +56,6 @@
     </footer>
 
     <!-- You can include your JavaScript file here -->
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
-
-

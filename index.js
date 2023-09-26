@@ -1,22 +1,38 @@
 //Global variables
-const URL = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita'
-const margaritaDropDown = document.querySelector('#margarita-dropdown')
+const URL = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s='
+const listDrinks = document.querySelector('#drink-list')
 const commentForm = document.querySelector('#comment-form')
 const commentValue = document.querySelector('#comment-input')
+const drinkSearch = document.querySelector('#drink-search')
 //Landon
-const start = () => {
-    fetch(URL)
+drinkSearch.addEventListener('submit', (e) => {
+e.preventDefault()
+let request = e.target.search.value
+start(request)
+
+})
+
+const start = (request) => {
+    listDrinks.innerHTML = ""
+
+    fetch(`${URL}${request}`)
         .then(response => response.json())
-        .then(data => data.drinks.forEach(margarita => dropMenue(margarita)))
+        .then(data => {
+            if(data.drinks && data.drinks.length > 0) {
+                data.drinks.forEach(drink => drinkList(drink))
+            } else {
+                alert('No drinks found for your search.')
+            }
+        })
         .catch(error => alert(error))
 }
-const dropMenue = (margarita) => {
+const drinkList = (drink) => {
+  const li = document.createElement('li')
+  li.textContent = drink.strDrink
+  listDrinks.append(li)
   
-    const option = document.createElement('option')
-    option.textContent = margarita.strDrink
-    margaritaDropDown.append(option)
 }
-start()
+// start()
 //Michel
 
 
