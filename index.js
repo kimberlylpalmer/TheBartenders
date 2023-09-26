@@ -5,6 +5,7 @@ const listDrinks = document.querySelector("#drink-list");
 const commentForm = document.querySelector("#comment-form");
 const commentValue = document.querySelector("#comment-input");
 const drinkSearch = document.querySelector("#drink-search");
+const searchResultsContainer = document.querySelector('#search-results');
 //Landon
 drinkSearch.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -26,31 +27,40 @@ const start = (request) => {
     })
     .catch((error) => alert(error));
 };
+
 const drinkList = (drink) => {
   const li = document.createElement("li");
   li.textContent = drink.strDrink;
-  listDrinks.append(li);
+  listDrinks.appendChild(li);
+
+  // Add a click event listener to the drink item
+  li.addEventListener('click', () => {
+    displayIngredients(drink);
+  });
 };
+
 // start()
 //Michel
 
 
 const displayIngredients = (cocktail) => {
-  ingredientsList.innerHTML = '';
+  const ingredientsList = document.querySelector('#ingredients-list');
+  ingredientsList.innerHTML = "";
 
   for (let i = 1; i <= 15; i++) {
-    const ingredient = cocktail[`strIngredient${i}`];
-    const measure = cocktail[`strMeasure${i}`];
+      const ingredient = cocktail[`strIngredient${i}`];
+      const measure = cocktail[`strMeasure${i}`];
 
-    if (ingredient) {
-      const li = document.createElement('li');
-      li.textContent = `${measure ? measure + ' ' : ''}${ingredient}`;
-      ingredientsList.appendChild(li);
-    } else {
-      break;
-    }
+      if (ingredient) {
+          const li = document.createElement("li");
+          li.textContent = `${measure ? measure + " " : ""}${ingredient}`;
+          ingredientsList.appendChild(li);
+      } else {
+          break;
+      }
   }
 };
+
 
 // Kimberly
 document.addEventListener('DOMContentLoaded', () => {
