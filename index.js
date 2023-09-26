@@ -1,6 +1,8 @@
 //Global variables
 const URL = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita'
 const margaritaDropDown = document.querySelector('#margarita-dropdown')
+const commentForm = document.querySelector('#comment-form')
+const commentValue = document.querySelector('#comment-input')
 //Landon
 const start = () => {
     fetch(URL)
@@ -33,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         commentForm.reset()
     })
 })
+
 
 function buildComment (comment) {
     let li = document.createElement('li');
