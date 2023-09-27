@@ -1,48 +1,46 @@
 {
-    margin: 0;
-    padding: 0;
-  }
-  
-  
-  header {
-    background-color: #bbc4c4;
-    color: #fff;
-    text-align: center;
-    padding: 300px;
-    margin: 5px
-  }
-  
-  header h1 {
-    font-size: 2em;
-  }
-  
-  #cocktail-selector {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  li {
-    list-style-type: none;
+header {
+  background-color: #bbc4c4;
+  color: #fff;
+  text-align: center;
+  padding: 300px; 
+  margin: 5px;
+}
 
-    
-  }
-  
-  #drink-search input[type="text"] {
-    padding: 10px;
-    width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  #search-button {
-    padding: 10px 20px;
-    background-color: #ff9d00; /* Orange color */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+header h1 {
+  font-size: 2em;
+}
+
+#cocktail-selector {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+#drink-search input[type="text"] {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #ff9d00; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
   
   #cocktail-display {
     display: flex;
