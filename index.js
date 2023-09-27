@@ -16,6 +16,7 @@ drinkSearch.addEventListener("submit", (e) => {
   let request = e.target.search.value;
 if(request.length > 1) {
   start(request);
+  e.target.reset()
 } else {
 addCocktailMessage.placeholder = "Add Cocktail.."
 }
