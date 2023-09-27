@@ -9,12 +9,15 @@ const searchResultsContainer = document.querySelector('#search-results');
 const likes = document.querySelector('#likes')
 const addLike = document.querySelector('#add-like')
 const resetLike = document.querySelector('#reset-btn')
+const addCocktailMessage = document.querySelector('#drink-search input[type=text]')
 //Landon
 drinkSearch.addEventListener("submit", (e) => {
   e.preventDefault();
   let request = e.target.search.value;
 if(request.length > 1) {
   start(request);
+} else {
+addCocktailMessage.placeholder = "Add Cocktail.."
 }
 });
 
