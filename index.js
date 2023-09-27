@@ -7,6 +7,8 @@ const commentValue = document.querySelector("#comment-input");
 const drinkSearch = document.querySelector("#drink-search");
 const searchResultsContainer = document.querySelector('#search-results');
 const likes = document.querySelector('#likes')
+const addLike = document.querySelector('#add-like')
+const resetLike = document.querySelector('#reset-btn')
 //Landon
 drinkSearch.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -39,8 +41,14 @@ const drinkList = (drink) => {
 };
 
 const likeDrink = () => {
-
+likes.textContent = parseInt(likes.textContent) + 1
 }
+addLike.addEventListener('click', likeDrink)
+
+const resetDrink = () => {
+  likes.textContent = 0
+  }
+  resetLike.addEventListener('click', resetDrink)
 
 //Michel
 
