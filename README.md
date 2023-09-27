@@ -8,7 +8,7 @@
 3. [Features](#features)
 4. [Contributing Authors](#contributing-authors)
 5. [License](#license)
-6. [Acknowledgements/Credits](#acknowledgements)
+6. [Acknowledgements and Credits](#acknowledgements-and-credits)
 
 ## Description
 
@@ -88,7 +88,7 @@ THE BARTENDERS IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMP
 
 [Back to Table of contents](#table-of-contents)
 
-## Acknowledgements/Credits:
+## Acknowledgements and Credits:
 
 The Bartenders Project would like to express our sincere gratitude to everyone who made this project possible.
 
@@ -101,5 +101,46 @@ We are immensely grateful to all who contributed to this project, directly or in
 [Back to Table of contents](#table-of-contents)
 
 
+COMMENTS:
+
+"I told myself I'd only look at one recipe... that was 20 cocktails ago. Send help... or more booze!" 
+
+"This website turned me into a mixologist. Well, a mixologist with a tendency to sip a little too much of the inventory!" 
+
+"If I keep saving more recipes, I'm going to need a bigger liver!" 
+
+"Warning: This website may cause a sudden, uncontrollable desire to shake things up!" 
+
+"It’s 5 o'clock somewhere, and by ‘somewhere’ I mean on this website at all times. Cheers to the never-ending happy hour!" 
+
+"Navigating this site is easier than deciding which cocktail to make next...so, I made all of them!" 
+
+"Found my spirit animal on this site. Turns out, it’s a cocktail." 
+
+"This website should come with a warning label: 'May lead to impromptu parties, unforgettable nights, and occasional mornings of regret.'" 
+
+"Do you need a degree to be a mixologist, or can I just keep calling myself that because I use this site?"
+
+"Cheers to this website for making my bar cart look like a magical potion station. Harry Potter, who?" 
+
+"A fantastic resource for both novices and seasoned mixologists alike. The variety of recipes and easy-to-follow instructions have taken my cocktail game to the next level!"
+
+"I absolutely love the user-friendly interface and the vast collection of cocktail recipes. It’s my go-to source whenever I’m looking to try something new."
+
+"This website is a gem! The additional tips on garnishing and serving make each cocktail a visual and tasteful delight. Highly recommended!"
+
+"I'm impressed with the quality and diversity of the recipes here. Whether I'm looking for a classic cocktail or something more avant-garde, I always find what I need."
+
+"A must-visit website for every cocktail enthusiast. The detailed recipes, coupled with recommendations for the right mixers and spirits, have made my home bar the talk of the town!"
+
+"The search features are exceptional, allowing me to find the perfect cocktail based on the ingredients I have on hand. It’s like having a professional bartender at my fingertips!"
+
+"From the breadth of recipes to the visual appeal of the website, everything is top-notch. I’ve discovered a world of cocktails I never knew existed!"
+
+"An invaluable resource for hosting gatherings. My guests are always impressed with the cocktails I serve, all thanks to the amazing recipes I found on this website!"
+
+"Every recipe I’ve tried has been a hit! The clear instructions and suggested variations make experimenting fun and easy. Cheers to my favorite online cocktail companion!"
+
+"Navigating this website is a breeze, and I'm always inspired by the curated collections of cocktails for different occasions and seasons. It’s the perfect mix of inspiration and instruction!"
 
 
