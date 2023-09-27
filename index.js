@@ -106,6 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+
 document.addEventListener("DOMContentLoaded", () => {
   const commentForm = document.querySelector("#comment-form");
   commentForm.addEventListener("submit", (event) => {
@@ -123,6 +124,7 @@ function buildComment(comment) {
   li.textContent = `${comment}`;
   document.querySelector("#comment-list").append(li);
 }
+
 
 //document.addEventListener("DOMContentLoaded", () { })  //first event
 
