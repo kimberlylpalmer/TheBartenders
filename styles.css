@@ -1,130 +1,132 @@
-
-
 /* Reset default margin and padding for all elements */
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  
-  header {
-    background-color: #bbc4c4;
-    color: #fff;
-    text-align: center;
-    padding: 80px;
-  }
-  
-  header h1 {
-    font-size: 2em;
-  }
-  
-  #cocktail-selector {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #bbc4c4;
+  color: #fff;
+  text-align: center;
+  padding: 80px;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+#cocktail-selector {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+#drink-search input[type="text"] {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #ff9d00; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#cocktail-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cocktail-image {
+  margin-right: 20px;
+}
+
+#cocktail-img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#cocktail-details {
+  text-align: left;
+}
+
+#cocktail-details h2 {
+  font-size: 2.5em;
+  color: #ff6600;
+}
+
+#cocktail-details h3 {
+  font-size: 1.3em;
+  margin-top: 10px;
+}
+
+#comment-section {
+    position: absolute; /* Use absolute positioning */
+    bottom: 50px; /* Adjust as needed to position it above the footer */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    width: 80%;
     background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
+    padding: 10px;
+    margin: 20px;
   }
 
-  li {
-    list-style-type: none;
+#comment-form input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-    
-  }
-  
-  #drink-search input[type="text"] {
-    padding: 10px;
-    width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  #search-button {
-    padding: 10px 20px;
-    background-color: #ff9d00; /* Orange color */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #cocktail-display {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #cocktail-image {
-    margin-right: 20px;
-  }
-  
-  #cocktail-img {
-    max-width: 300px;
-    max-height: 300px;
-  }
-  
-  #cocktail-details {
-    text-align: left;
-  }
-  
-  #cocktail-details h2 {
-    font-size: 1.5em;
-    color: #ff6600; 
-  }
-  
-  #cocktail-details h3 {
-    font-size: 1.2em;
-    margin-top: 10px;
-  }
-  
-  
-  #comment-section {
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
-  #comment-form input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  #comment-form button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #ff6600; 
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  
-  #add-like, #reset-btn {
-    background-color: #ff6600; 
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  
-  #comment-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  #comment-list li {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-  }
+#comment-form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+footer {
+  position: fixed;
+  left:0;
+  bottom:0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+#add-like,
+#reset-btn {
+  background-color: #ff6600;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#comment-list {
+  list-style: none;
+  padding: 0;
+}
+
+#comment-list li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
