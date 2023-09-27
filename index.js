@@ -6,6 +6,7 @@ const commentForm = document.querySelector("#comment-form");
 const commentValue = document.querySelector("#comment-input");
 const drinkSearch = document.querySelector("#drink-search");
 const searchResultsContainer = document.querySelector('#search-results');
+const likes = document.querySelector('#likes')
 //Landon
 drinkSearch.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -32,13 +33,14 @@ const drinkList = (drink) => {
   const li = document.createElement("li");
   li.textContent = drink.strDrink;
   listDrinks.appendChild(li);
-
-  // Add a click event listener to the drink item
   li.addEventListener('click', () => {
     displayIngredients(drink);
   });
 };
 
+const likeDrink = () => {
+
+}
 
 //Michel
 
@@ -79,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-start();
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -115,3 +117,4 @@ function buildComment(comment) {
 //fetch request here
 
 // fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
+
