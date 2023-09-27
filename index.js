@@ -48,10 +48,16 @@ const drinkList = (drink) => {
   li.addEventListener("click", () => {
     displayIngredients(drink);
     likes.textContent = 0;
+
+    //!Cocktail NameOn click
+    const cocktailName = document.getElementById("cocktail-name");
+    cocktailName.textContent = drink.strDrink;
+    //!Cocktail Image On click
     const drinkImage = document.getElementById("cocktail-img");
-    drinkImage.src = drink.strDrinkThumb
+    drinkImage.src = drink.strDrinkThumb;
   });
 };
+
 
 const mouseOver = (e) => {
   e.target.style.color = "blue";
