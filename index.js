@@ -100,16 +100,29 @@ const displayIngredients = (cocktail) => {
 // Kimberly
 document.addEventListener("DOMContentLoaded", () => {
   const commentForm = document.querySelector("#comment-form");
+
+  if(commentForm) {
   commentForm.addEventListener("submit", (event) => {
     event.preventDefault();
+
+    const drinkNameComment = document.querySelector('#drink-name')
     const commentValue = document.querySelector("#comment-input");
-    buildComment(commentValue.value);
+
+    if (drinkNameComment && commentValue) {
+      if (!drinkNameComment.value.trim() || !commentValue.value.trim()) {
+        alert("Please add drink name and comment")
+        return; 
+      }
+    const fullComment = `This ${drinkNameComment.value} recipe is ${commentValue.value}`;
+    buildComment(fullComment);
     commentForm.reset();
+    }
   });
+}
 
   function buildComment(comment) {
     let li = document.createElement("li");
-    li.textContent = `${comment}`;
+    li.textContent = comment;
     document.querySelector("#comment-list").append(li);
   }
 });
