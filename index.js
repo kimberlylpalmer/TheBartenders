@@ -12,6 +12,7 @@ const addCocktailMessage = document.querySelector(
   "#drink-search input[type=text]"
 );
 const list = document.querySelector("li");
+
 //Landon
 drinkSearch.addEventListener("submit", (e) => {
   e.preventDefault();
