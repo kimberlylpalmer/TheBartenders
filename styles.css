@@ -68,9 +68,11 @@ a:hover {
     padding: 20px;
     text-align: center;
   }
-  
+
   li {
     list-style-type: none;
+    
+    
   }
   
   #drink-search input[type="text"] {

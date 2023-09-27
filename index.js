@@ -10,6 +10,7 @@ const likes = document.querySelector('#likes')
 const addLike = document.querySelector('#add-like')
 const resetLike = document.querySelector('#reset-btn')
 const addCocktailMessage = document.querySelector('#drink-search input[type=text]')
+const list = document.querySelector('li')
 //Landon
 drinkSearch.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -41,19 +42,30 @@ const drinkList = (drink) => {
   const li = document.createElement("li");
   li.textContent = drink.strDrink;
   listDrinks.appendChild(li);
+  li.addEventListener('mousemove', mouseOver)
+  li.addEventListener('mouseout', mouseOut)
   li.addEventListener('click', () => {
     displayIngredients(drink);
   });
 };
 
+const mouseOver = (e) => {
+  e.target.style.color = 'blue'
+}
+const mouseOut = (e) => {
+  e.target.style.color = ""
+}
+
 const likeDrink = () => {
 likes.textContent = parseInt(likes.textContent) + 1
 }
-addLike.addEventListener('click', likeDrink)
 
 const resetDrink = () => {
   likes.textContent = 0
   }
+
+  // list.addEventListener('mousemove', mouse)
+  addLike.addEventListener('click', likeDrink)
   resetLike.addEventListener('click', resetDrink)
 
 //Michel
