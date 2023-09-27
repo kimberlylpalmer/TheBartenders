@@ -48,6 +48,8 @@ const drinkList = (drink) => {
   li.addEventListener("click", () => {
     displayIngredients(drink);
     likes.textContent = 0;
+    const drinkImage = document.getElementById("cocktail-img");
+    drinkImage.src = drink.strDrinkThumb
   });
 };
 
