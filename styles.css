@@ -7,7 +7,7 @@ header {
   background-color: #bbc4c4;
   color: #fff;
   text-align: center;
-  padding: 50px;
+  padding: 80px;
   margin: 5px;
 }
 
@@ -72,9 +72,9 @@ li {
 
 #comment-section {
   position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 50px; 
+  left: 50%; 
+  transform: translateX(-50%); 
   width: 80%;
   background-color: #f2f2f2;
   padding: 10px;

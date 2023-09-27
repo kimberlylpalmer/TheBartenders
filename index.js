@@ -59,7 +59,6 @@ const drinkList = (drink) => {
   });
 };
 
-
 const mouseOver = (e) => {
   e.target.style.color = "blue";
 };
