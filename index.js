@@ -13,7 +13,9 @@ const resetLike = document.querySelector('#reset-btn')
 drinkSearch.addEventListener("submit", (e) => {
   e.preventDefault();
   let request = e.target.search.value;
+if(request.length > 1) {
   start(request);
+}
 });
 
 const start = (request) => {

@@ -1,4 +1,4 @@
-body, h1, h2, p {
+/* body, h1, h2, p {
     margin: 0;
     padding: 0;
 }
@@ -43,3 +43,128 @@ a:hover {
     padding: 10px 20px;
     background-color: blueviolet
 }
+
+
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+  }
+  
+  #cocktail-selector {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  #drink-search input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #search-button {
+    padding: 10px 20px;
+    background-color: #ff6600; /* Orange color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #cocktail-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #cocktail-image {
+    margin-right: 20px;
+  }
+  
+  #cocktail-img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  
+  #cocktail-details {
+    text-align: left;
+  }
+  
+  #cocktail-details h2 {
+    font-size: 1.5em;
+    color: #ff6600; 
+  }
+  
+  #cocktail-details h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  
+  #comment-section {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  #comment-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #comment-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ff6600; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  
+  #add-like, #reset-btn {
+    background-color: #ff6600; 
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  
+  #comment-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #comment-list li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
