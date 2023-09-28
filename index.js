@@ -50,20 +50,20 @@ const drinkList = (drink) => {
     displayIngredients(drink);
     likes.textContent = 0;
 
-    //!Cocktail NameOn click
+   
     const cocktailName = document.getElementById("cocktail-name");
     cocktailName.textContent = drink.strDrink;
-    //!Cocktail Image On click
+
     const drinkImage = document.getElementById("cocktail-img");
     drinkImage.src = drink.strDrinkThumb;
   });
 };
 
 const mouseOver = (e) => {
-  e.target.style.color = "blue";
+  e.target.classList.add('blue-text');
 };
 const mouseOut = (e) => {
-  e.target.style.color = "";
+  e.target.classList.remove('blue-text')
 };
 
 const likeDrink = () => {
@@ -98,11 +98,10 @@ const displayIngredients = (cocktail) => {
 };
 
 // Kimberly
-document.addEventListener("DOMContentLoaded", () => {
-  const commentForm = document.querySelector("#comment-form");
+
+
   commentForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    const commentValue = document.querySelector("#comment-input");
     buildComment(commentValue.value);
     commentForm.reset();
   });
@@ -112,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
     li.textContent = `${comment}`;
     document.querySelector("#comment-list").append(li);
   }
-});
+
 
 
 
