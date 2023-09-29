@@ -14,6 +14,7 @@ const addCocktailMessage = document.querySelector(
 const list = document.querySelector("li");
 
 //Landon
+
 drinkSearch.addEventListener("submit", (e) => {
   e.preventDefault();
   let request = e.target.search.value;
@@ -99,7 +100,6 @@ const displayIngredients = (cocktail) => {
 
 // Kimberly
 
-
   commentForm.addEventListener("submit", (event) => {
     event.preventDefault();
     buildComment(commentValue.value);
@@ -115,17 +115,3 @@ const displayIngredients = (cocktail) => {
 
 
 
-//document.addEventListener("DOMContentLoaded", () { })  //first event
-
-//Project Assignments List
-//1. COMPLETED WITH SCRIPT PLACEMENT - DOMContentLoaded - Page Loads and picture pops up - Doesn't count as an eventListener
-//2. COMPLETED - MouseOver - Button will be in the heading that will open the drop down menu of
-//3. COMPLETED - Click - Whatever is selected from drop down menu, after a "click" will display name, image, description
-//4. MouseOut  - Mouseover the drinks and changes colors/
-//5. COMPLETED - Submit - create comment form, add comment below the instructions
-//6. Language Menu
-//7. Add comments to API persistently
-
-//fetch request here
-
-// fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
