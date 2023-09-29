@@ -15,23 +15,35 @@ drinkSearch.addEventListener("submit", (e) => {
     start(request);
     e.target.reset();
   } else {
-    addCocktailMessage.placeholder = "Add Cocktail..";
+    alert("Please enter a valid search term.");
   }
 });
+
 
 const start = (request) => {
   listDrinks.innerHTML = "";
   fetch(`${URL}${request}`)
-    .then((response) => response.json())
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
     .then((data) => {
-      if (data.drinks && data.drinks.length > 0) {
+      console.log(data);
+      if (data && data.drinks && data.drinks.length > 0) {
         data.drinks.forEach((drink) => drinkList(drink));
       } else {
+        console.log("No drinks found. Triggering alert.");
         alert("No drinks found for your search.");
       }
     })
-    .catch((error) => alert(error));
+    .catch((error) => {
+      console.log(error); 
+      alert(error);
+    });
 };
+
 
 const displayInstructions = (drink) => {
   const instructionsContainer = document.querySelector("#instructions-container");
@@ -103,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
       event.preventDefault();
       const commentValue = document.querySelector("#comment-input");
       if (commentValue && commentValue.value.trim()) {
-        const fullComment = `${commentValue.value}`;
+        const fullComment = `"${commentValue.value}"`;
         buildComment(fullComment);
         commentForm.reset();
       } else {
