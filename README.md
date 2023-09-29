@@ -34,7 +34,8 @@ The Bartenders not only empowers you by providing a variety of drink recipes bas
 
 ## Usage:
 
-*demo film snippet here*
+![Alt text](assets/The%20Bartenders%20README%20Snippet.gif)
+
 
 ### We Aims To
 
