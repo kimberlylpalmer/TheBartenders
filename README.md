@@ -29,6 +29,13 @@ Ever have a have bottle of alcohol at home but are unsure of the diverse drink r
 
 The Bartenders not only empowers you by providing a variety of drink recipes based solely on the input of a specific type of alcohol, but also includes a handy cocktail name search function. This feature allows you to quickly locate and explore recipes by entering the name of a cocktail, offering an expedient way to access your favorite mixes or discover new ones. Whether you're looking to enjoy classic cocktails, discover modern twists, or explore new drink concoctions, this app ensures that you’re equipped with an array of options. In essence, The Bartenders enhances the home mixology experience by offering inspiration and guidance tailored to your available ingredients and desired cocktails.
 
+
+[Back to Table of contents](#table-of-contents)
+
+## Usage:
+
+*demo film snippet here*
+
 ### We Aims To
 
 1. Promote Exploration
@@ -36,26 +43,6 @@ The Bartenders not only empowers you by providing a variety of drink recipes bas
 3. Educate and Inspire
 4. Offer Convenience
 5. Cultivate a Community of Enthusiasts
-
-[Back to Table of contents](#table-of-contents)
-
-## Installation: 
-
-*Step-by-step instructions on how to install and use this web app.*
-
-This can include:
-
-* Prerequisites or dependencies.
-
-* Commands to run.
-
-* External links for downloading necessary software or packages.
-
-[Back to Table of contents](#table-of-contents)
-
-## Usage:
-
-*demo film snippet here*
 
 [Back to Table of contents](#table-of-contents)
 
@@ -99,48 +86,5 @@ Our appreciation goes out to the open-source community. We are indebted to the c
 We are immensely grateful to all who contributed to this project, directly or indirectly, for their belief in the potential impact of our work. Your support has been the pillar of this project's success.
 
 [Back to Table of contents](#table-of-contents)
-
-
-COMMENTS:
-
-"I told myself I'd only look at one recipe... that was 20 cocktails ago. Send help... or more booze!" 
-
-"This website turned me into a mixologist. Well, a mixologist with a tendency to sip a little too much of the inventory!" 
-
-"If I keep saving more recipes, I'm going to need a bigger liver!" 
-
-"Warning: This website may cause a sudden, uncontrollable desire to shake things up!" 
-
-"It’s 5 o'clock somewhere, and by ‘somewhere’ I mean on this website at all times. Cheers to the never-ending happy hour!" 
-
-"Navigating this site is easier than deciding which cocktail to make next...so, I made all of them!" 
-
-"Found my spirit animal on this site. Turns out, it’s a cocktail." 
-
-"This website should come with a warning label: 'May lead to impromptu parties, unforgettable nights, and occasional mornings of regret.'" 
-
-"Do you need a degree to be a mixologist, or can I just keep calling myself that because I use this site?"
-
-"Cheers to this website for making my bar cart look like a magical potion station. Harry Potter, who?" 
-
-"A fantastic resource for both novices and seasoned mixologists alike. The variety of recipes and easy-to-follow instructions have taken my cocktail game to the next level!"
-
-"I absolutely love the user-friendly interface and the vast collection of cocktail recipes. It’s my go-to source whenever I’m looking to try something new."
-
-"This website is a gem! The additional tips on garnishing and serving make each cocktail a visual and tasteful delight. Highly recommended!"
-
-"I'm impressed with the quality and diversity of the recipes here. Whether I'm looking for a classic cocktail or something more avant-garde, I always find what I need."
-
-"A must-visit website for every cocktail enthusiast. The detailed recipes, coupled with recommendations for the right mixers and spirits, have made my home bar the talk of the town!"
-
-"The search features are exceptional, allowing me to find the perfect cocktail based on the ingredients I have on hand. It’s like having a professional bartender at my fingertips!"
-
-"From the breadth of recipes to the visual appeal of the website, everything is top-notch. I’ve discovered a world of cocktails I never knew existed!"
-
-"An invaluable resource for hosting gatherings. My guests are always impressed with the cocktails I serve, all thanks to the amazing recipes I found on this website!"
-
-"Every recipe I’ve tried has been a hit! The clear instructions and suggested variations make experimenting fun and easy. Cheers to my favorite online cocktail companion!"
-
-"Navigating this website is a breeze, and I'm always inspired by the curated collections of cocktails for different occasions and seasons. It’s the perfect mix of inspiration and instruction!"
 
 
