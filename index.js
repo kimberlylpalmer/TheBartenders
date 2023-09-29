@@ -109,12 +109,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const commentValue = document.querySelector("#comment-input");
     
 
-    if (drinkNameComment && commentValue) {
-      if (!drinkNameComment.value.trim() || !commentValue.value.trim()) {
-        alert("Please add drink name and comment")
+    if (commentValue) {
+      if (!commentValue.value.trim()) {
+        alert("Please add comment")
         return; 
       }
-    const fullComment = `${drinkNameComment.value}:  ${commentValue.value}`;
+    const fullComment = `${commentValue.value}`;
     buildComment(fullComment);
     commentForm.reset();
     }
