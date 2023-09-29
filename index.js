@@ -40,17 +40,23 @@ const start = (request) => {
     .catch((error) => alert(error));
 };
 
+const displayInstructions = (drink) => {
+  console.log("Display Instructions Called", drink);
+  const instructionsContainer = document.querySelector("#instructions-container");
+  instructionsContainer.textContent = drink.strInstructions;
+};
+
 const drinkList = (drink) => {
   const li = document.createElement("li");
   li.textContent = drink.strDrink;
   listDrinks.appendChild(li);
-  li.addEventListener("mousemove", mouseOver);
-  li.addEventListener("mouseout", mouseOut);
   li.addEventListener("click", () => {
     displayIngredients(drink);
+    displayInstructions(drink);
     likes.textContent = 0;
 
-   
+    const hideInstructions = document.querySelector("#hide-instructions");
+    hideInstructions.style.display = 'block'; 
     const cocktailName = document.getElementById("cocktail-name");
     cocktailName.textContent = drink.strDrink;
 
@@ -58,6 +64,9 @@ const drinkList = (drink) => {
     drinkImage.src = drink.strDrinkThumb;
   });
 };
+
+
+
 
 const mouseOver = (e) => {
   e.target.classList.add('blue-text');
