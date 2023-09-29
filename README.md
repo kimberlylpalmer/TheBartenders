@@ -1,13 +1,10 @@
 # TheBartenders
-
-![Alt Text](<assets/Thumbnail%20of%20The%20Bartenders%20Logo%20(2).png>)
-
+![Alt Text](assets/Thumbnail%20of%20The%20Bartenders%20Logo%20(2).png)
 # The Bartenders
 
 ## Table of contents:
-
-1. [Description](#description)
-2. [Usage](#usage)
+1. [Description](#description) 
+2. [Usage](#usage) 
 3. [Features](#features)
 4. [Contributing Authors](#contributing-authors)
 5. [License](#license)
@@ -15,13 +12,12 @@
 
 ## Description
 
-Ever found yourself with a specific kind of alcohol and wondered what delightful drinks you could whip up with it? With The Bartenders Web Page, simply enter your available spirit, be it a bottle of aged rum, a touch of gin, or a hint of vermouth, and we'll serve up a curated collection of cocktail recipes for you.
+Ever found yourself with a specific kind of alcohol and wondered what delightful drinks you could whip up with it? With The Bartenders Web Page, simply enter your available spirit, be it a bottle of aged rum, a touch of gin, or a hint of vermouth, and we'll serve up a curated collection of cocktail recipes for you. 
 
 Dive into our extensive library to:
-
-- Explore timeless classics 🍹
-- Discover modern twists 🥂
-- Craft that perfect drink for any occasion 🥃
+* Explore timeless classics 🍹
+* Discover modern twists 🥂
+* Craft that perfect drink for any occasion 🥃
 
 Your next favorite cocktail is just an input away!
 
@@ -33,11 +29,13 @@ Ever have a have bottle of alcohol at home but are unsure of the diverse drink r
 
 The Bartenders not only empowers you by providing a variety of drink recipes based solely on the input of a specific type of alcohol, but also includes a handy cocktail name search function. This feature allows you to quickly locate and explore recipes by entering the name of a cocktail, offering an expedient way to access your favorite mixes or discover new ones. Whether you're looking to enjoy classic cocktails, discover modern twists, or explore new drink concoctions, this app ensures that you’re equipped with an array of options. In essence, The Bartenders enhances the home mixology experience by offering inspiration and guidance tailored to your available ingredients and desired cocktails.
 
+
 [Back to Table of contents](#table-of-contents)
 
 ## Usage:
 
-*demo film snippet here*
+![Alt text](assets/The%20Bartenders%20README%20Snippet.gif)
+
 
 ### We Aims To
 
@@ -50,9 +48,8 @@ The Bartenders not only empowers you by providing a variety of drink recipes bas
 [Back to Table of contents](#table-of-contents)
 
 ## Features:
-
 1. An input for alcohol ingredient or cocktail name that will return some suggested beverages from a list
-2. When selected from the list, the cocktail name, a picture of the beverage of choice and a list of ingredients will be provided.
+2. When selected from the list, the cocktail name, a picture of the beverage of choice and a list of ingredients will be provided. 
 3. Clicking on the picture will provide recipe instructions to make the cocktail.
 4. There is a comment form for people to leave feedback on the site
 5. People can add likes to the beverage of their choice
@@ -60,15 +57,13 @@ The Bartenders not only empowers you by providing a variety of drink recipes bas
 [Back to Table of contents](#table-of-contents)
 
 ## Contributing Authors:
-
-- Kimberly Palmer
-- Landon Cramer
-- Michael Phan
+* Kimberly Palmer
+* Landon Cramer
+* Michael Phan
 
 [Back to Table of contents](#table-of-contents)
 
 ## License:
-
 The MIT License (MIT)
 
 Copyright (c) 2023 The Bartenders - Phase 1 Group 6
@@ -87,8 +82,10 @@ The Bartenders Project would like to express our sincere gratitude to everyone w
 
 - **Matteo Piccini** for his guidance and insights that shaped the final product of this project.
 
-Our appreciation goes out to the open-source community. We are indebted to the creators and maintainers of TheCocktailDB(https://www.thecocktaildb.com/) that played a crucial role in the functionality and effectiveness of our project.
+Our appreciation goes out to the open-source community. We are indebted to the creators and maintainers of TheCocktailDB(https://www.thecocktaildb.com/)  that played a crucial role in the functionality and effectiveness of our project.
 
 We are immensely grateful to all who contributed to this project, directly or indirectly, for their belief in the potential impact of our work. Your support has been the pillar of this project's success.
 
 [Back to Table of contents](#table-of-contents)
+
+
