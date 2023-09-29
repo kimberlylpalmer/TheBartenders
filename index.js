@@ -10,8 +10,10 @@ const addLike = document.querySelector("#add-like");
 const resetLike = document.querySelector("#reset-btn");
 const addCocktailMessage = document.querySelector(
   "#drink-search input[type=text]"
-);
-const list = document.querySelector("li");
+  );
+  const list = document.querySelector("li");
+  const drinkNameComment = document.querySelector('#drink-name')
+  const commentValue = document.querySelector("#comment-input");
 
 //Landon
 drinkSearch.addEventListener("submit", (e) => {
@@ -67,9 +69,7 @@ const mouseOut = (e) => {
 };
 
 const likeDrink = () => {
-  likes.textContent = parseInt(likes.textContent) + 1;
-};
-
+  likes.textContent = parseInt(likes.textContent) + 1;git pull
 const resetDrink = () => {
   likes.textContent = 0;
 };
@@ -105,8 +105,6 @@ document.addEventListener("DOMContentLoaded", () => {
   commentForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const drinkNameComment = document.querySelector('#drink-name')
-    const commentValue = document.querySelector("#comment-input");
 
     if (drinkNameComment && commentValue) {
       if (!drinkNameComment.value.trim() || !commentValue.value.trim()) {
