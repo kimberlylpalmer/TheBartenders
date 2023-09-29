@@ -97,23 +97,37 @@ const displayIngredients = (cocktail) => {
   }
 };
 
-// Kimberly
+// Kimberlygit 
+document.addEventListener("DOMContentLoaded", () => {
+  const commentForm = document.querySelector("#comment-form");
 
-
+  if(commentForm) {
   commentForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    buildComment(commentValue.value);
+
+    const drinkNameComment = document.querySelector('#drink-name')
+    const commentValue = document.querySelector("#comment-input");
+    
+
+    if (drinkNameComment && commentValue) {
+      if (!drinkNameComment.value.trim() || !commentValue.value.trim()) {
+        alert("Please add drink name and comment")
+        return; 
+      }
+    const fullComment = `${drinkNameComment.value}:  ${commentValue.value}`;
+    buildComment(fullComment);
     commentForm.reset();
+    }
   });
+}
 
   function buildComment(comment) {
     let li = document.createElement("li");
-    li.textContent = `${comment}`;
+    // li.textContent = `${comment}`;
+    li.textContent = comment;
     document.querySelector("#comment-list").append(li);
   }
-
-
-
+});
 
 //document.addEventListener("DOMContentLoaded", () { })  //first event
 
