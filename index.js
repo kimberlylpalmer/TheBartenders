@@ -14,6 +14,7 @@ const addCocktailMessage = document.querySelector(
 const list = document.querySelector("li");
 
 //Landon
+
 drinkSearch.addEventListener("submit", (e) => {
   e.preventDefault();
   let request = e.target.search.value;
@@ -97,35 +98,38 @@ const displayIngredients = (cocktail) => {
   }
 };
 
-// Kimberly
 
+
+// Kimberlygit 
+document.addEventListener("DOMContentLoaded", () => {
+  const commentForm = document.querySelector("#comment-form");
+
+  if(commentForm) {
 
   commentForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    buildComment(commentValue.value);
+
+    const drinkNameComment = document.querySelector('#drink-name')
+    const commentValue = document.querySelector("#comment-input");
+    
+
+    if (commentValue) {
+      if (!commentValue.value.trim()) {
+        alert("Please add comment")
+        return; 
+      }
+    const fullComment = `${commentValue.value}`;
+    buildComment(fullComment);
     commentForm.reset();
+    }
   });
+}
 
   function buildComment(comment) {
     let li = document.createElement("li");
-    li.textContent = `${comment}`;
+    // li.textContent = `${comment}`;
+    li.textContent = comment;
     document.querySelector("#comment-list").append(li);
   }
+});
 
-
-
-
-//document.addEventListener("DOMContentLoaded", () { })  //first event
-
-//Project Assignments List
-//1. COMPLETED WITH SCRIPT PLACEMENT - DOMContentLoaded - Page Loads and picture pops up - Doesn't count as an eventListener
-//2. COMPLETED - MouseOver - Button will be in the heading that will open the drop down menu of
-//3. COMPLETED - Click - Whatever is selected from drop down menu, after a "click" will display name, image, description
-//4. MouseOut  - Mouseover the drinks and changes colors/
-//5. COMPLETED - Submit - create comment form, add comment below the instructions
-//6. Language Menu
-//7. Add comments to API persistently
-
-//fetch request here
-
-// fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
