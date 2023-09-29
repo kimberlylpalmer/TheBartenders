@@ -1,19 +1,12 @@
-//Global variables
 const URL = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
 const listDrinks = document.querySelector("#drink-list");
 const commentForm = document.querySelector("#comment-form");
 const commentValue = document.querySelector("#comment-input");
 const drinkSearch = document.querySelector("#drink-search");
-const searchResultsContainer = document.querySelector("#search-results");
 const likes = document.querySelector("#likes");
 const addLike = document.querySelector("#add-like");
 const resetLike = document.querySelector("#reset-btn");
-const addCocktailMessage = document.querySelector(
-  "#drink-search input[type=text]"
-);
-const list = document.querySelector("li");
-
-//Landon
+const addCocktailMessage = document.querySelector("#drink-search input[type=text]");
 
 drinkSearch.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -28,7 +21,6 @@ drinkSearch.addEventListener("submit", (e) => {
 
 const start = (request) => {
   listDrinks.innerHTML = "";
-
   fetch(`${URL}${request}`)
     .then((response) => response.json())
     .then((data) => {
@@ -42,7 +34,6 @@ const start = (request) => {
 };
 
 const displayInstructions = (drink) => {
-  console.log("Display Instructions Called", drink);
   const instructionsContainer = document.querySelector("#instructions-container");
   instructionsContainer.textContent = drink.strInstructions;
 };
@@ -51,6 +42,10 @@ const drinkList = (drink) => {
   const li = document.createElement("li");
   li.textContent = drink.strDrink;
   listDrinks.appendChild(li);
+  
+  li.addEventListener("mouseover", mouseOver);
+  li.addEventListener("mouseout", mouseOut);
+
   li.addEventListener("click", () => {
     displayIngredients(drink);
     displayInstructions(drink);
@@ -67,11 +62,10 @@ const drinkList = (drink) => {
 };
 
 
-
-
 const mouseOver = (e) => {
   e.target.classList.add('blue-text');
 };
+
 const mouseOut = (e) => {
   e.target.classList.remove('blue-text')
 };
@@ -87,16 +81,12 @@ const resetDrink = () => {
 addLike.addEventListener("click", likeDrink);
 resetLike.addEventListener("click", resetDrink);
 
-//Michel
-
 const displayIngredients = (cocktail) => {
   const ingredientsList = document.querySelector("#ingredients-list");
   ingredientsList.innerHTML = "";
-
   for (let i = 1; i <= 15; i++) {
     const ingredient = cocktail[`strIngredient${i}`];
     const measure = cocktail[`strMeasure${i}`];
-
     if (ingredient) {
       const li = document.createElement("li");
       li.textContent = `${measure ? measure + " " : ""}${ingredient}`;
@@ -107,38 +97,24 @@ const displayIngredients = (cocktail) => {
   }
 };
 
-
-
-// Kimberlygit 
 document.addEventListener("DOMContentLoaded", () => {
-  const commentForm = document.querySelector("#comment-form");
-
   if(commentForm) {
-
-  commentForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const drinkNameComment = document.querySelector('#drink-name')
-    const commentValue = document.querySelector("#comment-input");
-    
-
-    if (commentValue) {
-      if (!commentValue.value.trim()) {
-        alert("Please add comment")
-        return; 
+    commentForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const commentValue = document.querySelector("#comment-input");
+      if (commentValue && commentValue.value.trim()) {
+        const fullComment = `${commentValue.value}`;
+        buildComment(fullComment);
+        commentForm.reset();
+      } else {
+        alert("Please add comment");
       }
-    const fullComment = `${commentValue.value}`;
-    buildComment(fullComment);
-    commentForm.reset();
-    }
-  });
-}
+    });
+  }
 
   function buildComment(comment) {
     let li = document.createElement("li");
-    // li.textContent = `${comment}`;
     li.textContent = comment;
     document.querySelector("#comment-list").append(li);
   }
 });
-
